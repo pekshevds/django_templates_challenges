@@ -11,4 +11,8 @@ from django.shortcuts import render
 
 
 def contacts_info_view(request):
-    return render(request, 'level_1/contacts_info.html')
+    return render(
+        request,
+        "level_1/contacts_info.html",
+        context={"title": "Контактная информация"},
+    )
